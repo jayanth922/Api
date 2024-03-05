@@ -7,6 +7,13 @@ jobs:
       - checkout:
           keys:
             -  'C:/Users/jayan/Downloads/hw1/.ssh/project_key'
+
+      - run:
+          name: Install spaCy and the English model
+          command: |
+            pip install spacy
+            python -m spacy download en_core_web_sm
+
       - run:
           name: Installing dependencies
           command: |
