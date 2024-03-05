@@ -5,7 +5,8 @@ jobs:
       - image: circleci/python:3.9
     steps:
       - checkout:
-          
+          keys:
+            - C:/Users/jayan/Downloads/hw1/.ssh/project_key
       - run:
           name: Installing dependencies
           command: |
