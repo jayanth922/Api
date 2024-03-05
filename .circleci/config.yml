@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout:
           keys:
-            - C:/Users/jayan/Downloads/hw1/.ssh/project_key
+            -  'C:/Users/jayan/Downloads/hw1/.ssh/project_key'
       - run:
           name: Installing dependencies
           command: |
