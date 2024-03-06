@@ -28,7 +28,7 @@ texts = {
       From the bustling street stalls to the elegant fine-dining establishments, Indian cuisine offers a captivating journey for the senses, showcasing the country's cultural richness and culinary heritage.''']
 }
 
-def summarize_text(text_id, num_sentences=2):
+def summarize_text(text_id, num_sentences=2):                     
     text_list = texts.get(text_id)
     
     if not text_list:
