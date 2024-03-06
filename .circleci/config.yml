@@ -6,20 +6,12 @@ jobs:
     steps:
       - checkout:
           keys:
-            -  'C:/Users/jayan/Downloads/hw1/.ssh/project_key'
+            - 'C:/Users/jayan/Downloads/hw1/.ssh/project_key'
 
       - run:
           name: Installing dependencies
           command: |
-            python -m venv venv
-            . venv/bin/activate
             pip install -r requirements.txt
-
-      - run:
-          name: Install spaCy and the English model
-          command: |
-            pip install spacy
-            python -m spacy download en_core_web_sm
 
       
       - run:
