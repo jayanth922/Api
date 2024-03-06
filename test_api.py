@@ -83,9 +83,12 @@ def delete_text(text_id):
     else:
         return jsonify({'message': f'Text with ID {text_id} not found'})
 
-# Tests
-import pytest
 
+
+
+
+
+import pytest
 @pytest.fixture
 def client():
     app.config['TESTING'] = True
