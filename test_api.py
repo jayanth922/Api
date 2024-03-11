@@ -86,7 +86,7 @@ def test_add_text(client):
 
 
 def test_delete_text(client):
-    response = client.delete('/texts/3')
+    response = client.delete('/texts/4')
     assert response.status_code == 200
     assert 'message' in response.json
 
